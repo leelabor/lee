@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bem-vindo à Minha Página</h1>
+  </header>
+
+  <main>
+    <h2>Sobre</h2>
+    <p>Essa é uma página simples feita com HTML e CSS. Você pode usar isso como base para criar seu próprio site.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Minha Página</p>
+  </footer>
+
+</body>
+</html>
+Se quiser, posso ajudar a adaptar esse modelo para um portfólio, blog, loja, ou qualquer outro tipo de site. Quer algo mais específico?
+
+
+
+
+
+
+
+Você disse:
+código html para uma página com css e menu responsivo
+
+
+O ChatGPT disse:
+Claro! Aqui está um exemplo de página HTML com CSS e um menu responsivo (hambúrguer) que funciona em dispositivos móveis e desktops, usando apenas HTML e CSS (sem JavaScript):
+
+html
+Copiar
+Editar
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página com Menu Responsivo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: background 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    /* Botão hamburguer */
+    .menu-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+        margin-top: 10px;
+      }
+
+      .menu a {
+        padding: 10px;
+        border-top: 1px solid #444;
+      }
+
+      .menu-toggle:checked + .hamburger + .menu {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Minha Página</div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="menu">
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bem-vindo!</h1>
+    <p>Essa é uma página com um menu responsivo simples usando apenas HTML e CSS.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Minha Página</p>
+  </footer>
+
+</body>
+</html>
